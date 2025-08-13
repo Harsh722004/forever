@@ -6,10 +6,8 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
   "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
 
