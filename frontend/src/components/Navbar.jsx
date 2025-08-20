@@ -2,12 +2,14 @@ import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
+import { ThemeContext } from '../context/ThemeContext'
 
 const Navbar = () => {
 
     const [visible, setVisble] = useState(false)
 
     const { setShowSearch, navigate, getCartCount } = useContext(ShopContext);
+    const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
     return (
         <div className='flex items-center justify-between py-5 font-medium' >
@@ -35,6 +37,9 @@ const Navbar = () => {
 
             <div className='flex items-center gap-6'>
                 <img onClick={() => { setShowSearch(true); navigate('/collection') }} className='w-5 cursor-pointer' src={assets.search_icon} alt="" />
+                <div onClick={toggleDarkMode} className='cursor-pointer'>
+                    {darkMode ? <i className="fa-solid fa-sun text-xl"></i> : <i className="fa-solid fa-moon text-xl"></i>}
+                </div>
                 <div className='group relative'>
                     <img onClick={() => { navigate('/login') }} className='w-5 cursor-pointer' src={assets.profile_icon} alt="" />
 

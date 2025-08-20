@@ -1,5 +1,6 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -28,4 +29,78 @@ a.active hr {
     background-color: black;
     color: white;
   }
+}
+
+.dark body {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.dark .text-gray-700 {
+  color: #cbd5e0;
+}
+
+.dark .text-gray-600 {
+  color: #000000;
+}
+
+.dark .text-gray-500 {
+  color: #718096;
+}
+
+.dark .text-gray-400 {
+  color: #4a5568;
+}
+
+.dark .bg-white {
+  background-color: #2d3748;
+}
+
+.dark .bg-gray-100 {
+  background-color: #4a5568;
+}
+
+.dark .border {
+  border-color: #4a5568;
+}
+
+.dark .border-t-2 {
+  border-color: #4a5568;
+}
+
+.dark .border-t {
+  border-color: #4a5568;
+}
+
+.dark .border-b {
+  border-color: #000000;
+}
+
+.dark .border-gray-300 {
+  border-color: #4a5568;
+}
+
+.dark .border-gray-800 {
+  border-color: #050505;
+}
+
+.dark .bg-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark .active\:bg-gray-700:active {
+  background-color: #4a5568;
+}
+
+.dark .dropdown-menu {
+  background-color: #2d3748;
+}
+
+.dark .bg-slate-100 {
+  background-color: #10141b;
+}
+
+.dark .hover\:text-black:hover {
+  color: #e2e8f0;
 }
